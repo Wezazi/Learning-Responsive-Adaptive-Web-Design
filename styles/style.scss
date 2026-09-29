@@ -1,6 +1,10 @@
 @use 'header';
 @use 'main';
 
+body{
+    height:100vh;
+}
+
 @media (orientation:landscape){
     body{
         background-color:red;
@@ -17,5 +21,7 @@
 
 .center{
     display:flex;
-    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    height:100%;
 }
