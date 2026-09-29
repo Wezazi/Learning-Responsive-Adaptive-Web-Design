@@ -1,0 +1,21 @@
+@use 'header';
+@use 'main';
+
+@media (orientation:landscape){
+    body{
+        background-color:red;
+    }
+
+}
+
+@media (orientation:portrait){
+    body{
+        background-color:blue;
+    }
+
+}
+
+.center{
+    display:flex;
+    justify-content:center;
+}
