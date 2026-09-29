@@ -1,6 +1,4 @@
 
-/*320px is the smallest screen size */
-
 @use 'fonts';
 
 body{
@@ -8,9 +6,6 @@ body{
     align-items: center;
     justify-content: center;
 
-    /*
-        flex-wrap:wrap; to make artificial breakline work
-    */
 }
 
 .grid{
@@ -99,7 +94,7 @@ img{
     }
 }
 
-@media (orientation:portrait) and (max-width:480px){ /* phone */
+@media (orientation:portrait) and (max-width:480px){ /* phone, 320px is the smallest screen size */
     .kill{
         display:none;
     }
@@ -115,13 +110,4 @@ img{
         visibility: visible;
     }
 }
-
-
-/*
-.br{
-    flex-basis:100%;
-    height:0;
-}
-
-*/
 
