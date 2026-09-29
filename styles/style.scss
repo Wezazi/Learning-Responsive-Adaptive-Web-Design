@@ -1,5 +1,4 @@
 @use 'header';
-@use 'main';
 
 body{
     height:100vh;
@@ -22,6 +21,13 @@ body{
 .center{
     display:flex;
     justify-content:center;
+    width:100%;
+}
+
+.page{
     max-width:864px;
-    box-sizing: content-box;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
 }
