@@ -3,6 +3,7 @@
 
 body{
     height:100vh;
+    
 }
 
 @media (orientation:landscape){
@@ -26,8 +27,6 @@ body{
 }
 
 .page{
-    max-width:864px;
-    width:100%;
     display:flex;
     justify-content:space-between;
     flex-wrap:wrap;
