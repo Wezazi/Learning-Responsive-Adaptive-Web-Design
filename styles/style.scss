@@ -1,3 +1,6 @@
+
+/*320px is the smallest screen size */
+
 @use 'fonts';
 
 body{
@@ -8,12 +11,11 @@ body{
 
 
 .header{
-    margin-top:62px;
+    margin:50px;
     display:flex;
     flex-wrap:wrap;
     max-width:864px;
     width:100%;
-
     align-items:center;
     justify-content:space-between;
 
@@ -33,17 +35,43 @@ body{
 
 }
 
+.warning{
+    size:100vw;
+    position:absolute;
+    background-color:red;
+    visibility:hidden;
+}
 
-@media (orientation:landscape){
+@media (orientation:landscape){ /* monitor */
     body{
-        background-color:red;
+        background-color:green;
     }
 
 }
 
-@media (orientation:portrait){
+@media (orientation:portrait){ /* tablet */
     body{
         background-color:blue;
     }
+}
 
+@media (orientation:portrait) and (max-width:480px){ /* phone */
+    .kill{
+        display:none;
+    }
+}
+
+@media (max-width:320px){ 
+    body{
+        background-color:red;
+
+    }
+
+    .warning{
+        visibility: visible;
+    }
+}
+
+h1{
+    display:block;
 }
